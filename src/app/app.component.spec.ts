@@ -26,10 +26,10 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('angular-testing');
   });
 
-  it('should render title in a h1 tag', () => {
+  it('should render title in a h2 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to angular-testing!');
+    expect(compiled.querySelector('h2').textContent).toContain('angular-testing');
   });
 });
